@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>  
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Survey to know your experience using learnol.com</p>
+    <form id="survey-form">
+      <div class="section">
+        <label id="name-label" for="name">Name</label>
+        <input class ="field" id="name" type="text" placeholder="Enter your name" required>
+      </div>
+
+      <div class="section">
+        <label id="email-label" for="email">Email</label>
+        <input class ="field" id="email" type="email" placeholder="Enter your email" required>
+      </div>
+        
+      <div class="section">
+        <label id="number-label" for="number">Number</label>
+        <input class ="field" id="number" type="number" min="1" max="99" placeholder="Age">
+      </div>
+        
+      <div class="section">
+        <p class="question">Which option best describes your current role?</p>
+        <select class ="field" id="dropdown" type="dropdown" class="dropdown" required>
+          <option disabled selected value>Select a role</option>
+          <option value="student">Student</option>
+          <option value="fullTimeJob">Full-time job</option>
+          <option value="partTimeJob">Part-time job</option>
+          <option value="preferNotSay">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <p class="question">Would you recommend learnol.com to a friend?</p>
+        <label>
+          <input name="recommendation-option" value="definitely" type="radio" class="recommendation">
+          Definitely
+        </label>
+        <label>
+          <input name="recommendation-option" value="maybe" type="radio" class="recommendation">
+          Maybe
+        </label>
+        <label>
+          <input name="recommendation-option" value="sure" type="radio" class="recommendation">
+          Sure
+        </label>
+      </div>
+
+      <div class="section">
+        <p class="question">What is your favorite feature of learnol.com?</p>
+        <select class ="field">
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open source</option>
+        </select>
+      </div>
+
+      <div class="section">
+        <p class="question">
+          What would you like to see improved?
+          <span class="hint">(Check all that apply)</span>
+        </p>
+        <label>
+          <input name="recommendation-option" value="definitely" type="checkbox" class="recommendation">
+        Front-end projects
+        </label>
+        <label>
+          <input name="recommendation-option" value="maybe" type="checkbox" class="recommendation">
+          Back-end projects
+        </label>
+        <label>
+          <input name="recommendation-option" value="sure" type="checkbox" class="recommendation">
+          Data Visualization
+        </label>
+      </div>
+
+      <div>
+        <p class="question">Any comments or suggestions</p>
+        <textarea id="commSugg" name="comSugg" placeholder="Enter your comment here..."></textarea>
+        <button id="submit" type="submit">Submit</button>
+      </div>    
+    </form>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
