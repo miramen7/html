@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Product Landing Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="item1">
+                <h1>Ice Cream</h1>
+                <img id="header-img" src="https://cdn1.vectorstock.com/i/thumbs/30/50/cartoon-cute-ice-cream-with-colorful-glaze-vector-24423050.jpg"  alt width="auto" height="50px">
+            </div>
+            <div class="item2">
+                <nav class="bar" id="nav-bar" style="position: fixed;">
+                    <ul>
+                        <li id="option">
+                            <a  style="color:pink;" class="nav-link" href="#model">Model</a>       
+                        </li>
+                        <li id="option">
+                            <a style="color:pink;" class="nav-link" href="#teaser">Teaser</a>
+                        </li>
+                        <li id="option">
+                            <a style="color:pink;" class="nav-link" href="#about">About Us</a>        
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="containerEmail">
+        <form action="https://www.freecodecamp.com/email-submit" id="form" method="POST">
+            <label id="emailLabel" for="email">Email:</label>
+            <input type="email"  id="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" id="submit" value="Enter">
+        </form>
+    </section>
+
+    <div class="containerModel">
+        <section id="model">
+            <div class="row">
+                <div class="icon">
+                    <i class="fas fa-ice-cream fa-3x">
+                    </i>
+                </div>
+                <div class="definition">
+                    <h2>Gelato</h2>
+                        <p>Gelato, Ice Cream’s Italian cousin, is made with whole milk, without using added cream.
+                           <!-- This makes the milkfat percentage much lower than traditional ice cream. Also, gelato is often made without eggs and stabilizers. While it is being churned, there is little to no air whipped into it, leaving a dense, thick texture. -->
+                        </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="icon">
+                    <i class="fas fa-heart fa-3x"></i>
+                </div>
+                <div class="definition">
+                    <h2>Sorbet</h2>
+                        <p>
+                            Sorbet is frozen treat that contains little to no dairy. Because it is made by using frozen berries and sweetened water, it is very light in texture and flavor.
+                            <!-- Many people believe that all sorbets are vegan, but this isn’t always the case. In some sorbets, egg whites are used to hold the mixture together a bit better. -->
+                        </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="icon">
+                    <i class="fas fa-sun fa-3x"></i> 
+                </div> 
+                <div class="definition">
+                    <h2>Sherbet</h2>
+                        <p>
+                            Sherbet, similarly to sorbet, is a fruit-based frozen dessert, but it does contain dairy. It is made with fruit juice, milk or cream, egg whites, and in some cases, gelatin.
+                            <!-- Sherbet ice cream is defined as a frozen dessert that contains no more than 1-3% milkfat. If the mixture goes over 3%, it is considered ice cream. If it is under 1%, it is considered water ice. -->
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="teaser">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/vRXZj0DzXIA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <section id="pricing">
+            <div class="product" id="gelato">
+                <h1 class="productTitle">Gelato</h1>
+                <h2>$10</h2>
+                <ol>
+                    <li>Lorem ipsum </li> 
+                    <li>in provident</li>
+                    <li> quod voluptas</li>
+                    <li> reiciendis </li>
+                </ol>
+                <input type="submit" id="select" value="Select">
+            </div>
+            <div class="product" id="sorbet">
+                <h1 class="productTitle">Sorbet</h1>
+                <h2>$20</h2>
+                <ul>
+                    <li>Lorem ipsum </li> 
+                    <li>in provident</li>
+                    <li> quod voluptas</li>
+                    <li> reiciendis </li>
+                    <input type="submit" id="select" value="Select">
+                </ul>
+                
+            </div>
+            <div class="product" id="sherbet">
+                <h1 class="productTitle">Sherbet</h1>
+                <h2>$30</h2>
+                <p>Lorem ipsum </p> 
+                <p>in provident</p>
+                <p> quod voluptas</p>
+                <p> reiciendis </p>
+                <input type="submit" id="select" value="Select">
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+                <p>Ice cream is a sweetened frozen food typically eaten as a snack or dessert. It may be made from dairy milk or cream and is flavoured with a sweetener, either sugar or an alternative, and any spice, such as cocoa or vanilla. It can also be made by whisking a flavored cream base and liquid Nitrogen together. Colorings are usually added, in addition to stabilizers. The mixture is stirred to incorporate air spaces and cooled below the freezing point of water to prevent detectable ice crystals from forming. The result is a smooth, semi-solid foam that is solid at very low temperatures (below 2 °C or 35 °F). It becomes more malleable as its temperature increases.</p>
+        </section>
+    </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
